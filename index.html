@@ -147,7 +147,7 @@ input:focus{outline:none;border-color:var(--blue)}
     </div>
     <div style="overflow-x:auto">
       <table class="tbl">
-        <thead><tr><th>Nhóm tài sản</th><th>Khoản mục</th><th class="r">Giá trị (triệu)</th><th class="r">Tỷ trọng</th></tr></thead>
+        <thead><tr><th>Nhóm tài sản</th><th>Khoản mục</th><th class="r">Giá trị</th><th class="r">Tỷ trọng</th></tr></thead>
         <tbody id="ov-tbody"></tbody>
       </table>
     </div>
@@ -173,15 +173,15 @@ input:focus{outline:none;border-color:var(--blue)}
   <div class="card">
     <div class="stag st-tien">💰 Tiền mặt & Tiết kiệm</div>
     <div class="g2">
-      <div class="field"><label>Tiết kiệm Vietinbank (triệu)</label><input type="number" id="a-vietinbank" placeholder="0" oninput="liveP()"></div>
-      <div class="field"><label>Tài khoản MB Bank (triệu)</label><input type="number" id="a-mbbank" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>Tiết kiệm Vietinbank (VNĐ)</label><input type="number" id="a-vietinbank" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>Tài khoản MB Bank (VNĐ)</label><input type="number" id="a-mbbank" placeholder="0" oninput="liveP()"></div>
     </div>
     <div class="g2">
-      <div class="field"><label>Tài khoản VP Bank (triệu)</label><input type="number" id="a-vpbank" placeholder="0" oninput="liveP()"></div>
-      <div class="field"><label>Tiền mặt (triệu)</label><input type="number" id="a-tienmat" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>Tài khoản VP Bank (VNĐ)</label><input type="number" id="a-vpbank" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>Tiền mặt (VNĐ)</label><input type="number" id="a-tienmat" placeholder="0" oninput="liveP()"></div>
     </div>
     <div class="g2" style="margin-bottom:10px">
-      <div class="field"><label>Đầu tư Affiliate (triệu)</label><input type="number" id="a-affiliate" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>Đầu tư Affiliate (VNĐ)</label><input type="number" id="a-affiliate" placeholder="0" oninput="liveP()"></div>
     </div>
     <div style="font-size:12px;color:var(--text2)">Tổng nhóm Tiền: <strong id="prev-tien" style="color:var(--text)">0 triệu</strong></div>
   </div>
@@ -226,8 +226,8 @@ input:focus{outline:none;border-color:var(--blue)}
   <div class="card">
     <div class="stag st-quy">📈 Chứng chỉ quỹ & ETF</div>
     <div class="g2" style="margin-bottom:10px">
-      <div class="field"><label>Vina Capital (triệu)</label><input type="number" id="a-vinacapital" placeholder="0" oninput="liveP()"></div>
-      <div class="field"><label>VPS (triệu)</label><input type="number" id="a-vps" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>Vina Capital (VNĐ)</label><input type="number" id="a-vinacapital" placeholder="0" oninput="liveP()"></div>
+      <div class="field"><label>VPS (VNĐ)</label><input type="number" id="a-vps" placeholder="0" oninput="liveP()"></div>
     </div>
     <div style="font-size:12px;color:var(--text2)">Tổng CCQ & ETF: <strong id="prev-quy" style="color:var(--text)">0 triệu</strong></div>
   </div>
@@ -255,8 +255,8 @@ input:focus{outline:none;border-color:var(--blue)}
   <div class="card">
     <div class="ctitle">Thu nhập hàng tháng</div>
     <div class="g2" style="margin-bottom:10px">
-      <div class="field"><label>Lương / thu nhập chính (triệu)</label><input type="number" id="inc-sal" placeholder="0" oninput="prevInc()"></div>
-      <div class="field"><label>Thu nhập phụ / đầu tư (triệu)</label><input type="number" id="inc-oth" placeholder="0" oninput="prevInc()"></div>
+      <div class="field"><label>Lương / thu nhập chính (VNĐ)</label><input type="number" id="inc-sal" placeholder="0" oninput="prevInc()"></div>
+      <div class="field"><label>Thu nhập phụ / đầu tư (VNĐ)</label><input type="number" id="inc-oth" placeholder="0" oninput="prevInc()"></div>
     </div>
     <div style="font-size:13px;color:var(--text2)">Tổng: <strong id="inc-prev" style="color:var(--text)">0 triệu</strong></div>
   </div>
@@ -275,16 +275,16 @@ input:focus{outline:none;border-color:var(--blue)}
       <span class="badge b-warn" id="exp-badge"></span>
     </div>
     <div class="g2">
-      <div class="field"><label>Nhà ở / thuê nhà (triệu)</label><input type="number" id="e-housing" placeholder="0" oninput="recalcExp()"></div>
-      <div class="field"><label>Ăn uống (triệu)</label><input type="number" id="e-food" placeholder="0" oninput="recalcExp()"></div>
+      <div class="field"><label>Nhà ở / thuê nhà (VNĐ)</label><input type="number" id="e-housing" placeholder="0" oninput="recalcExp()"></div>
+      <div class="field"><label>Ăn uống (VNĐ)</label><input type="number" id="e-food" placeholder="0" oninput="recalcExp()"></div>
     </div>
     <div class="g2">
-      <div class="field"><label>Đi lại / xăng xe (triệu)</label><input type="number" id="e-transport" placeholder="0" oninput="recalcExp()"></div>
-      <div class="field"><label>Mua sắm / giải trí (triệu)</label><input type="number" id="e-shopping" placeholder="0" oninput="recalcExp()"></div>
+      <div class="field"><label>Đi lại / xăng xe (VNĐ)</label><input type="number" id="e-transport" placeholder="0" oninput="recalcExp()"></div>
+      <div class="field"><label>Mua sắm / giải trí (VNĐ)</label><input type="number" id="e-shopping" placeholder="0" oninput="recalcExp()"></div>
     </div>
     <div class="g2" style="margin-bottom:14px">
-      <div class="field"><label>Y tế / sức khỏe (triệu)</label><input type="number" id="e-health" placeholder="0" oninput="recalcExp()"></div>
-      <div class="field"><label>Chi phí khác (triệu)</label><input type="number" id="e-other" placeholder="0" oninput="recalcExp()"></div>
+      <div class="field"><label>Y tế / sức khỏe (VNĐ)</label><input type="number" id="e-health" placeholder="0" oninput="recalcExp()"></div>
+      <div class="field"><label>Chi phí khác (VNĐ)</label><input type="number" id="e-other" placeholder="0" oninput="recalcExp()"></div>
     </div>
     <div class="sep"></div>
     <div class="g3" style="margin-bottom:14px">
@@ -376,10 +376,10 @@ const DEF={
   history:[],theme:'light'
 };
 
-let S=JSON.parse(localStorage.getItem('giasan-v3')||'null')||JSON.parse(JSON.stringify(DEF));
+let S=JSON.parse(localStorage.getItem('giasan-v4')||'null')||JSON.parse(JSON.stringify(DEF));
 let pieI=null,growOvI=null,expI=null,histI=null;
 
-function save(){localStorage.setItem('giasan-v3',JSON.stringify(S));}
+function save(){localStorage.setItem('giasan-v4',JSON.stringify(S));}
 function flash(id){const el=document.getElementById(id);if(!el)return;el.style.display='inline';setTimeout(()=>el.style.display='none',2500);}
 function toggleTheme(){S.theme=S.theme==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',S.theme);save();}
 
@@ -415,16 +415,17 @@ function initDate(){
   const eb=document.getElementById('exp-badge');if(eb)eb.textContent=b;
 }
 function loadInputs(){
-  TIEN_FIELDS.forEach(k=>{const e=document.getElementById('a-'+k);if(e)e.value=S.tien[k]||'';});
+  // Stored as triệu → display as VNĐ (×1e6)
+  TIEN_FIELDS.forEach(k=>{const e=document.getElementById('a-'+k);if(e)e.value=S.tien[k]?Math.round(S.tien[k]*1e6):'';});
   VANG_FIELDS.forEach(k=>{const e=document.getElementById('g-'+k);if(e)e.value=S.vang[k]||'';});
   const gpi=document.getElementById('gold-price-input');if(gpi)gpi.value=S.goldPrice||'';
   updateGoldDisp();
-  QUY_FIELDS.forEach(k=>{const e=document.getElementById('a-'+k);if(e)e.value=S.quy[k]||'';});
+  QUY_FIELDS.forEach(k=>{const e=document.getElementById('a-'+k);if(e)e.value=S.quy[k]?Math.round(S.quy[k]*1e6):'';});
   const ca=document.getElementById('fx-cny-amt');if(ca)ca.value=S.fx.cnyAmt||'';
   const cr=document.getElementById('fx-cny-rate');if(cr)cr.value=S.fx.cnyRate||'';
-  const is=document.getElementById('inc-sal');if(is)is.value=S.income.salary||'';
-  const io=document.getElementById('inc-oth');if(io)io.value=S.income.other||'';
-  ['housing','food','transport','shopping','health','other'].forEach(k=>{const e=document.getElementById('e-'+k);if(e)e.value=S.expenses[k]||'';});
+  const is=document.getElementById('inc-sal');if(is)is.value=S.income.salary?Math.round(S.income.salary*1e6):'';
+  const io=document.getElementById('inc-oth');if(io)io.value=S.income.other?Math.round(S.income.other*1e6):'';
+  ['housing','food','transport','shopping','health','other'].forEach(k=>{const e=document.getElementById('e-'+k);if(e)e.value=S.expenses[k]?Math.round(S.expenses[k]*1e6):'';});
   renderOtherAssets();
   liveP();prevInc();
 }
@@ -446,8 +447,8 @@ function renderOtherAssets(){
   if(!S.otherAssets||S.otherAssets.length===0){list.innerHTML='';updateOtherPreview();return;}
   list.innerHTML=S.otherAssets.map((a,i)=>`
     <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
-      <input type="text" value="${a.name}" placeholder="Tên tài sản" style="flex:2" onchange="S.otherAssets[${i}].name=this.value;save();liveP()">
-      <input type="number" value="${a.val||''}" placeholder="Giá trị (triệu)" style="flex:1" oninput="S.otherAssets[${i}].val=parseFloat(this.value)||0;save();liveP()">
+      <input type="text" value="${a.name}" placeholder="Tên tài sản (VD: Xe máy, BĐS...)" style="flex:2" onchange="S.otherAssets[${i}].name=this.value;save();liveP()">
+      <input type="number" value="${a.val?Math.round(a.val*1e6):''}" placeholder="Giá trị (VNĐ)" style="flex:1" oninput="S.otherAssets[${i}].val=(parseFloat(this.value)||0)/1e6;save();liveP()">
       <button class="btn-o btn-sm" onclick="removeOtherAsset(${i})" style="flex-shrink:0;color:var(--red);border-color:var(--red)">✕</button>
     </div>`).join('');
   updateOtherPreview();
@@ -465,48 +466,52 @@ function updateOtherPreview(){
   if(el)el.textContent=fmt(cOther())+' triệu';
 }
 
+// ── HELPERS ──
+const vnd=id=>(parseFloat(document.getElementById(id)?.value)||0)/1e6; // VNĐ input → triệu
+const fmtVND=v=>Math.round(v*1e6).toLocaleString('vi-VN'); // triệu → hiển thị VNĐ
+
 // ── LIVE PREVIEW ──
 function liveP(){
-  const tien=TIEN_FIELDS.reduce((a,k)=>a+(parseFloat(document.getElementById('a-'+k)?.value)||0),0);
+  const tien=TIEN_FIELDS.reduce((a,k)=>a+vnd('a-'+k),0);
   const chi=VANG_FIELDS.reduce((a,k)=>a+(parseFloat(document.getElementById('g-'+k)?.value)||0),0);
   const gp=parseFloat(document.getElementById('gold-price-input')?.value)||S.goldPrice||0;
   const vang=chi*(gp/1000000);
-  const quy=QUY_FIELDS.reduce((a,k)=>a+(parseFloat(document.getElementById('a-'+k)?.value)||0),0);
+  const quy=QUY_FIELDS.reduce((a,k)=>a+vnd('a-'+k),0);
   const cnyA=parseFloat(document.getElementById('fx-cny-amt')?.value)||0;
   const cnyR=parseFloat(document.getElementById('fx-cny-rate')?.value)||0;
   const fx=(cnyA*cnyR)/1000000;
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
-  set('prev-tien',fmt(tien)+' triệu');
+  set('prev-tien',fmtB(tien));
   set('prev-chi',fmtN(chi)+' chỉ');
-  set('prev-vang',fmt(vang)+' triệu');
-  set('prev-quy',fmt(quy)+' triệu');
-  set('prev-fx',fmt(fx)+' triệu VNĐ');
+  set('prev-vang',fmtB(vang));
+  set('prev-quy',fmtB(quy));
+  set('prev-fx',fmtB(fx));
   updateOtherPreview();
 }
 function prevInc(){
-  const t=(parseFloat(document.getElementById('inc-sal')?.value)||0)+(parseFloat(document.getElementById('inc-oth')?.value)||0);
-  const el=document.getElementById('inc-prev');if(el)el.textContent=fmt(t)+' triệu';
+  const t=vnd('inc-sal')+vnd('inc-oth');
+  const el=document.getElementById('inc-prev');if(el)el.textContent=fmtB(t);
 }
 
 // ── APPLY ──
 function applyAll(){
-  TIEN_FIELDS.forEach(k=>{S.tien[k]=parseFloat(document.getElementById('a-'+k)?.value)||0;});
+  TIEN_FIELDS.forEach(k=>{S.tien[k]=(parseFloat(document.getElementById('a-'+k)?.value)||0)/1e6;});
   VANG_FIELDS.forEach(k=>{S.vang[k]=parseFloat(document.getElementById('g-'+k)?.value)||0;});
   S.goldPrice=parseFloat(document.getElementById('gold-price-input')?.value)||S.goldPrice;
-  QUY_FIELDS.forEach(k=>{S.quy[k]=parseFloat(document.getElementById('a-'+k)?.value)||0;});
+  QUY_FIELDS.forEach(k=>{S.quy[k]=(parseFloat(document.getElementById('a-'+k)?.value)||0)/1e6;});
   S.fx.cnyAmt=parseFloat(document.getElementById('fx-cny-amt')?.value)||0;
   S.fx.cnyRate=parseFloat(document.getElementById('fx-cny-rate')?.value)||S.fx.cnyRate;
   // otherAssets already saved on each change
-  S.income.salary=parseFloat(document.getElementById('inc-sal')?.value)||0;
-  S.income.other=parseFloat(document.getElementById('inc-oth')?.value)||0;
+  S.income.salary=(parseFloat(document.getElementById('inc-sal')?.value)||0)/1e6;
+  S.income.other=(parseFloat(document.getElementById('inc-oth')?.value)||0)/1e6;
   save();renderOverview();flash('all-saved');
 }
 function applyExp(){
-  ['housing','food','transport','shopping','health','other'].forEach(k=>{S.expenses[k]=parseFloat(document.getElementById('e-'+k)?.value)||0;});
+  ['housing','food','transport','shopping','health','other'].forEach(k=>{S.expenses[k]=(parseFloat(document.getElementById('e-'+k)?.value)||0)/1e6;});
   save();renderOverview();flash('exp-saved');
 }
 function recalcExp(){
-  const t=['housing','food','transport','shopping','health','other'].reduce((a,k)=>a+(parseFloat(document.getElementById('e-'+k)?.value)||0),0);
+  const t=['housing','food','transport','shopping','health','other'].reduce((a,k)=>a+((parseFloat(document.getElementById('e-'+k)?.value)||0)/1e6),0);
   const s=cInc()-t;
   const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
   set('exp-tot',fmtB(t));set('exp-inc',fmtB(cInc()));
@@ -654,11 +659,11 @@ function renderExpChart(fromInput){
   const ctx=document.getElementById('expChart');if(!ctx)return;
   const keys=['housing','food','transport','shopping','health','other'];
   const lbls=['Nhà ở','Ăn uống','Đi lại','Mua sắm','Y tế','Khác'];
-  const data=fromInput?keys.map(k=>parseFloat(document.getElementById('e-'+k)?.value)||0):keys.map(k=>S.expenses[k]);
+  const data=fromInput?keys.map(k=>(parseFloat(document.getElementById('e-'+k)?.value)||0)/1e6):keys.map(k=>S.expenses[k]);
   if(expI)expI.destroy();
   expI=new Chart(ctx.getContext('2d'),{type:'bar',data:{labels:lbls,datasets:[{data,backgroundColor:EXP_C,borderWidth:0,borderRadius:4}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
-    scales:{y:{ticks:{callback:v=>v+' tr'},grid:{color:'rgba(128,128,128,0.07)'}},x:{grid:{display:false},ticks:{autoSkip:false}}}}});
+    scales:{y:{ticks:{callback:v=>fmtB(v)},grid:{color:'rgba(128,128,128,0.07)'}},x:{grid:{display:false},ticks:{autoSkip:false}}}}});
 }
 
 // ── GOALS — drag & drop + allocation ──
